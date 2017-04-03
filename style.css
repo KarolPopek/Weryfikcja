@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700,900&subset=latin-ext');
+@-ms-viewport{width:auto!important}
+
+.no_padding {
+	padding: 0;
+}
+
+#home {
+	background-image: url('img/bg_header.jpg');
+	background-color: #f9f8fb;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: 80% 10%;
+	height: 100vh; 
+	width: 100%;
+	background-size: cover;
+	position: relative;
+}
+
+.container {
+	margin-left: 10%;
+	padding: 0;
+}
+
+.navbar {
+	background-color: transparent;
+	transition: all 2s ease 0s; 
+  	-webkit-transition: all 2s ease 0s;
+}
+
+nav .navbar-brand {
+	padding: 20px 0 45px 0;
+	height: 100%;
+	transition: all 0.3s ease 0s; 
+  	-webkit-transition: all 0.3s ease 0s;
+}
+
+nav .navbar-brand h1 {
+	font-family: 'Pacifico';
+	font-size: 44px;
+	color: #fff;
+	margin-right: 30px;
+}
+
+#menu {
+	font-family: 'Raleway';
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding-top: 49px;
+	transition: padding 0.3s ease 0s; 
+  	-webkit-transition: padding 0.3s ease 0s;
+}
+
+#menu > ul > li > a {
+	color: #fff;
+	padding: 9px 0 9px 0px;
+	margin: 6px 15px 15px 23px;
+}
+
+#menu > ul > .active > a::before, #menu > ul> li > a:hover::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -1%;
+    height: 3px;
+    width: 102%;
+    background-color: #ff6033;
+}
+
+ #menu > ul> li > a:hover,  #menu > ul> li > a:focus {
+    background-color: transparent;
+}
+
+.navbar_top {
+	background: #353B3E;
+	height: 80px;
+	transition: all 0.3s ease 0s; 
+  	-webkit-transition: all 0.3s ease 0s;
+}
+
+.navbar_top .navbar-brand {
+	margin-top: -30px;
+	transition: all 0.3s ease 0s; 
+  	-webkit-transition: all 0.3s ease 0s; 
+}
+
+.navbar_top #menu {
+	padding-top: 20px;
+	transition: padding 0.3s ease 0s; 
+  	-webkit-transition: padding 0.3s ease 0s;
+}
+
+.button_nav {
+	float:right;
+	z-index:1000;
+	margin-top:2px;
+	margin-right:15px;
+	background-color:#fff ;
+	color:#262626 ;
+	border: none ;
+	font-size:20px ;
+	padding-left: 14px ;
+	padding-right: 14px ;
+	padding-top: 12px ;
+	border-radius: 0px;
+}
+
+#home .container .col-sm-6 {
+	word-spacing: 1px;
+    font-weight: 900;
+    color: #000;
+    left: 0;
+    right: 0;
+    position: absolute;
+    bottom: 30%;
+    width: 100%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mid-block {
+    width: 350px;
+    text-align: right;
+	margin-left: -4%;
+}
+
+.mid-block #border {
+	border-top: 1px solid #f0f0f0;
+	width: 330px;
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+
+.mid-block h1 {
+	font-family: 'Raleway';
+	padding-top: 350px;
+	color: #fff; 
+	width: 100%; 
+	font-size: 25px; 
+	line-height: 46px;
+	font-weight: 200; 
+}
+
+.mid-block p {
+	font-family: 'Raleway';
+	font-size: 20px;
+	line-height: 27px;
+	padding-top: 17px;
+	line-height: 33px;
+	font-weight: 900;
+}
+
+.scroll_img {
+	position: fixed;
+	bottom: 10px;
+	left: 0;
+  	right: 0;
+	transition: opacity 2s ease 0s; 
+  	-webkit-transition: opacity 2s ease 0s;
+	animation: scroll_img 2s infinite;
+	border: 2px solid transparent;
+    border-radius: 40px;
+}
+
+@keyframes scroll_img {
+    50% {
+		border: 2px solid #ff6033; 
+		padding: 6px;
+		border-radius: 40px; 
+		box-shadow: 0px 0px 15px #d0d0d0;
+	}
+}
+
+#content {
+	width: 100%;
+	height: 100%;
+	bacground-color: #fff;
+	float: left;
+}
+
+#tech {
+	width: 499px;
+	margin-top: 90px;
+	float: left;
+}
+
+#about {
+	width: 500px;
+	height: 100%;
+	float: left;
+	margin-left: 8%;
+	margin-top: 10px;
+}
+
+#aboutMe {
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+}
+
+#hText {
+	color: #000;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: right;
+	font-family: 'Raleway';
+	font-size: 25px; 
+	line-height: 46px;
+	font-weight: 400; 
+}
+
+.pText {
+	margin-bottom: 30px;
+	color: #666;
+	word-spacing: 3px;
+	text-align: right;
+	font-size: 18px;
+    line-height: 30px;
+    font-weight: 200;
+}
+
+#techList {
+	list-style: none;
+}
+
+#techList img {
+	opacity: 0.5;
+	display: block;
+	margin: auto;
+	margin-bottom: 40px;
+}
