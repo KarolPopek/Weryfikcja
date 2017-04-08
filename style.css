@@ -412,9 +412,17 @@ nav .navbar-brand h1 {
 	font-size: 20px;
 	line-height: 25px;
 	color: #262626;
-	margin-top: -27px;
-	margin-bottom: -23px;
+	margin-top: -25px;
+	margin-bottom: -18px;
+}
 
+#contact h3 a {
+	color: #66DBDB !important;
+    text-decoration: none;
+}
+
+#contact h3 a:hover {
+	color: #00C4C4 !important;
 }
 
 footer {
