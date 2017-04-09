@@ -17,13 +17,8 @@
 	position: relative;
 }
 
-#home .container {
-	margin-left: 10%;
-	padding: 0;
-}
-
 .navbar {
-	background-color: rgba(0, 0, 0, 0.8); 
+	background-color: rgba(0, 0, 0, 0.6); 
 	transition: all 2s ease 0s; 
   	-webkit-transition: all 2s ease 0s;
 }
@@ -112,7 +107,7 @@ nav .navbar-brand h1 {
     font-weight: 900;
     color: #000;
     left: 0;
-    right: 0;
+    right: 6%;
     position: absolute;
     bottom: 30%;
     width: 100%;
@@ -124,7 +119,6 @@ nav .navbar-brand h1 {
 .mid-block {
     width: 350px;
     text-align: right;
-	margin-left: -4%;
 }
 
 .mid-block #border {
@@ -216,6 +210,7 @@ nav .navbar-brand h1 {
 #resume_group .icon {
 	float: left;
     margin: 2px 14px 0 200px;
+	
 }
 
 #resume_group .icon:after {
@@ -238,6 +233,10 @@ nav .navbar-brand h1 {
     text-decoration: none;
 }
 
+#resume_group:hover {
+	cursor: pointer;
+}
+
 #techList {
 	list-style: none;
 }
@@ -253,6 +252,7 @@ nav .navbar-brand h1 {
 
 #techList img:hover {
 	opacity: 0.9;
+	cursor: pointer;
 }
 
 #works {
@@ -479,20 +479,99 @@ footer > div > .row > div:last-child > p > span{
 
 @media (min-width: 768px) and (max-width: 991px) {
 	
+	nav .navbar-brand h1 {
+		
+		font-size: 33px;
+	}
 	
+	.navbar_top {
+
+		height: 50px;
+	}
+	
+	#menu {
+	
+		font-weight: 700;
+		font-size: 15px;
+	}
+	
+	#home .container .col-sm-6 {
+		
+		right: 10%;
+		bottom: 50%;
+	}
+	
+	#home .container .col-sm-6 {
+		
+		right: 8%;
+		bottom: 51%;
+	}
+	
+	.mid-block #border {
+	
+		width: 250px;
+		margin-top: 3px;
+		margin-bottom: 8px;
+	}
+	
+	.mid-block h1 {
+
+		font-size: 18px; 
+		line-height: 28px;
+		font-weight: 400; 
+	}
+
+	.mid-block p {
+		font-size: 15px;
+		line-height: 28px;
+		font-weight: 900;
+	}
 	
 }
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	
-
+	nav .navbar-brand h1 {
+		
+		font-size: 40px;
+	}
 	
-}
+	.navbar_top {
 
+		height: 70px;
+	}
+	
+	#menu {
+	
+		font-weight: 700;
+		font-size: 18px;
+	}
+	
+	#home .container .col-sm-6 {
+		
+		right: 10%;
+		bottom: 50%;
+	}
+	
+	.mid-block #border {
+	
+		width: 300px;
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+	
+	.mid-block h1 {
 
-@media (min-width: 1200px)  {
-	
-	
+		font-size: 20px; 
+		line-height: 30px;
+		font-weight: 200; 
+	}
+
+	.mid-block p {
+		font-size: 18px;
+		line-height: 30px;
+		font-weight: 900;
+	}
 	
 }
