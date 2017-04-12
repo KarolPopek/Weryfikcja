@@ -1,3 +1,5 @@
+
+
 $(function(){
 	var shrinkHeader = 100;
 	var scrollImg = 200;
@@ -50,17 +52,6 @@ $(function(){
     }
   });
 });
-
-function viewMoreGallery(){
-	document.getElementById("more").style.display = "block";
-	document.getElementById("gallery_button").style.display = "none";
-	$(".more > div  > a ").attr("data-toggle", "lightbox").attr("data-gallery", "gallery");
-}
-
-function viewMoreBlog(){
-	document.getElementById("more_blog").style.display = "block";
-	document.getElementById("blog_button").style.display = "none";
-}
 
 
 (function($) {
