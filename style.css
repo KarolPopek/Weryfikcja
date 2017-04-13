@@ -158,21 +158,22 @@ nav .navbar-brand h1 {
 }
 
 #about {
+	max-height: 100%;
+	max-width: 1200px;
 	width: 100%;
-	height: 100%;
-	bacground-color: #282828;
+	margin: 0 auto;
 	margin-top: 90px;
-	margin-bottom: 150px;
+	margin-bottom: 100px;
 }
 
 #content {
 	padding-top: 60px;
-	max-width: 1000px;
+	max-width: 1100px;
 	margin: 0 auto;
 }
 
 #aboutMe {
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
 }
 #aboutMe .header {
@@ -239,7 +240,7 @@ blockquote {
 }
 
 #resume_group {
-	margin: 40px 0 0 0;
+	margin: 60px 0 0 0;
 	display: flex;
 	flex-direction: row;
 }
@@ -266,20 +267,34 @@ blockquote {
 	cursor: pointer;
 }
 
-#works {
-	height: 100vh; 
-	width: 100%;
-	margin-top: 100px;
+#works { 
+	max-height: 100%;
+	max-width: 1200px;
+	width: 90%;
 	bacground-color: #fff;
+	margin: 0 auto;
+	padding-top: 75px;
 }
 
 #works .row {
-	margin-left: 5%;
-	margin-right: 5%;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+	margin-right: 0;
+	margin-left: 0;
 }
 
 #works .col {
     width: 28%;
+	margin: 20px 5% 20px 10px;
+}
+
+#works .col:nth-child(3n){
+	margin-right: 0 !important;
 }
 
 #works .col img {
@@ -291,11 +306,6 @@ blockquote {
 
 #works .col img:hover {
 	opacity: 1.0;
-}
-
-.project-exept {
-	display: inline-block;
-	margin: 50px 10px 10px 50px;
 }
 
 .project-exept .line {
@@ -324,10 +334,12 @@ blockquote {
     margin: 0 0 20px 0;
 }
 
-#contact {
+#contact { 
+	max-height: 100%;
+	max-width: 1200px;
 	width: 100%;
-	height: 100%;
-	margin-top: 50px;
+	margin: 0 auto;
+	padding-top: 50px;
 	padding-bottom: 80px;
 }
 
@@ -470,27 +482,26 @@ footer > div > .row > div:last-child > p {
 	float: right;
 }
 
-footer > div > .row > div:last-child > p > span{
+footer > div > .row > div:last-child > p > span {
 	color: #FC5235;
 }
 
-@media (max-width: 316px)  {
+@media screen and (max-width: 316px)  {
 	
-
-}
-
-
-@media (max-width: 767px)  {
-	
-	nav .navbar-brand h1 {
+	.navbar-brand h1 {
 		
-		font-size: 30px;
-		margin-left: 40px;
+		font-size: 28px;
+		margin-left: 10px;
+	}
+	
+	.btn .visible-xs .button_nav {
+		padding-right: 1px;
+		margin-top: 0;
 	}
 	
 	.navbar_top {
 
-		height: 50px;
+		height: 70px;
 	}
 	
 	#menu {
@@ -501,13 +512,99 @@ footer > div > .row > div:last-child > p > span{
 	
 	#home .container .col-sm-6 {
 		
-		right: 10%;
-		bottom: 51%;
+		right: 1%;
+		bottom: 41%;
+	}
+	
+	.mid-block {
+		width: 270px;
 	}
 	
 	.mid-block #border {
 	
-		width: 250px;
+		width: 200px;
+		margin-top: 3px;
+		margin-bottom: 8px;
+	}
+	
+	.mid-block h1 {
+
+		font-size: 12px; 
+		line-height: 20px;
+		font-weight: 400; 
+	}
+
+	.mid-block p {
+		font-size: 11px;
+		line-height: 20px;
+		font-weight: 900;
+	}
+	
+	#aboutMe  h1.header {
+		font-size: 30px;
+		line-height: 1.2px;
+	}
+	
+	#aboutMe #hLine {
+		border-width: 3px;
+	}
+	
+	#aboutMe .info-quote p {
+		font-size: 18px;
+	}
+	
+	.details .col h3 {
+		font-size: 18px;
+	}
+	
+	.details .col p {
+		font-size: 11px;
+	}	
+	
+	#works .col {
+		width: 100%;
+		margin: 20px 0;
+	}
+}
+
+
+@media screen and (max-width: 767px)  {
+	
+	nav .navbar-brand h1 {
+		
+		font-size: 33px !important;
+		margin-left: 30px;
+	}
+	
+	.navbar_top {
+		height: 75px;
+	}
+	
+	.navbar_top .button_nav {
+		margin-top: 11px;
+	}
+	
+	.button_nav {
+		margin-top: 40px;
+		margin-right: 5px;
+	}
+	
+	#menu {
+		font-weight: 600;
+		font-size: 15px;
+	}
+	
+	#home .container .col-sm-6 {
+		right: 10%;
+		bottom: 51%;
+	}
+	
+	.mid-block {
+		width: 300px;
+	}
+	
+	.mid-block #border {
+		width: 222px;
 		margin-top: 3px;
 		margin-bottom: 8px;
 	}
@@ -524,11 +621,130 @@ footer > div > .row > div:last-child > p > span{
 		line-height: 25px;
 		font-weight: 900;
 	}
-		
+	
+	#aboutMe {
+		margin: 0 5% 0 5%;
+	}
+	
+	#aboutMe .header {
+		font-size: 48px;
+	}
+	
+	#aboutMe #hLine {
+		border-width: 2px;
+	}
+	
+	#aboutMe .info-quote {
+		font-size: 22px;
+	}
+	
+	.details .col {
+		width: 90%;
+	}
+	
+	.project-exept .line {
+		margin: 0 0 10px 0;
+		width: 12%;
+	}
+
+	.project-exept .title {
+		font-size: 22px;
+		line-height: 1.2;
+		margin: 0 0 5px 0;
+	}
+
+	.project-exept .categories {
+		font-size: 14px;
+	}
+	
+	#works .col {
+		width: 100%;
+		margin: 20px 0;
+	}
+	
+	#contact {
+		padding-bottom: 50px;
+	}
+	
+	#contact .row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	#contact h1{
+		font-size: 50px;
+		margin-top: 50px;
+		text-align: center;
+	}
+
+	#contact p{
+		margin-top: 40px;
+		font-size: 15px;
+		text-align: center;
+	}
+
+	#contact form input, #contact form textarea {
+		width: 100%;	
+		height: 40px;
+	}
+
+	#contact form textarea {
+		height: 150px;
+		padding-top: 20px;
+		font-size: 15px;
+		resize: none;
+	}
+
+	#contact button {
+		width: 100%;
+	}
+
+	#contact > div > .row > div {
+		margin-top: 10px;
+		width: 100%;
+		text-align: center;
+	}
+
+	#contact h2 {
+		color: #fff;	
+	}
+
+	#contact h3 {
+		font-size: 15px;
+		color: #fff;
+	}
+
+	footer {
+		height: auto;
+		padding-bottom: 20px;
+	}
+
+	footer > div > .row > div:first-child > p {
+		font-size: 14px;
+		padding-top: 28px;
+		float: none;
+		text-align: center;
+	}
+
+	footer > div > .row > div:nth-child(2) > img {
+		padding-top: 8px;
+	}
+
+	footer > div > .row > div:last-child > p {
+		font-size: 13px;
+		padding-top: 18px;
+		float: none;
+		text-align: center;
+	}
+	
+	footer > div > .row > div:nth-child(2) > h5 {
+		text-align: center;
+		padding: 0;
+	}
 }
 
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
 	
 	nav .navbar-brand h1 {
 		
@@ -537,7 +753,7 @@ footer > div > .row > div:last-child > p > span{
 	
 	.navbar_top {
 
-		height: 50px;
+		height: 75px;
 	}
 	
 	#menu {
@@ -578,41 +794,82 @@ footer > div > .row > div:last-child > p > span{
 		font-weight: 900;
 	}
 	
+	#aboutMe .header {
+		font-size: 75px;
+	}
+	
+	#aboutMe #hLine {
+		border-width: 3px;
+	}
+	
+	#aboutMe .info-quote {
+		font-size: 24px;
+	}
+	
+	.details .col h3 {
+		font-size: 22px;
+	}
+	
+	#contact h1 {
+		font-size: 80px;
+	}
+
+	#contact form input, #contact form textarea {
+		min-width: 400px;
+		width: auto;	
+	}
+
+	#contact button {
+		min-width: 400px;
+		width: auto;
+	}
+	
+	#contact > div > .row > div {
+		width: auto;
+		float: right;
+	}
+
+	#contact h3 {
+		font-size: 17px;
+	}
+
+	footer > div > .row > div:first-child > p {
+		font-size: 14px;
+	}
+
+	footer > div > .row > div:last-child > p {
+		font-size: 13px;
+	}
+	
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
 	
 	nav .navbar-brand h1 {
-		
 		font-size: 40px;
 	}
 	
 	.navbar_top {
-
 		height: 70px;
 	}
 	
 	#menu {
-	
 		font-weight: 700;
 		font-size: 18px;
 	}
 	
 	#home .container .col-sm-6 {
-		
 		right: 10%;
 		bottom: 50%;
 	}
 	
 	.mid-block #border {
-	
 		width: 300px;
 		margin-top: 5px;
 		margin-bottom: 10px;
 	}
 	
 	.mid-block h1 {
-
 		font-size: 20px; 
 		line-height: 30px;
 		font-weight: 200; 
@@ -624,6 +881,27 @@ footer > div > .row > div:last-child > p > span{
 		font-weight: 900;
 	}
 	
+	#aboutMe .header {
+		font-size: 90px;
+	}
 	
+	#aboutMe #hLine {
+		border-width: 4px;
+	}
 	
+	#aboutMe .info-quote {
+		font-size: 31px;
+	}
+	
+	#contact h1 {
+		font-size: 80px;
+	}
+	
+	footer > div > .row > div:first-child > p {
+		font-size: 14px;
+	}
+
+	footer > div > .row > div:last-child > p {
+		font-size: 13px;
+	}
 }
