@@ -1,10 +1,4 @@
-$(document).ready(function() {
 
-$("#contactForm").submit(function(event){
-    // cancels the form submission
-    event.preventDefault();
-    submitForm();
-});
 
 $(function(){
 	var shrinkHeader = 100;
@@ -41,7 +35,7 @@ $(function(){
 		$('#menu').removeClass('in'); // close right menu after click
 		if(window.innerWidth > 768){ // screen width
 			$('html, body').animate({
-			scrollTop: $(hash).offset().top-59 // top margin
+			scrollTop: $(hash).offset().top-79 // top margin
 		  }, 900, function(){
 			//window.location.hash = hash;
 
@@ -66,5 +60,3 @@ $(function(){
     $(this).ekkoLightbox();
   });
 })(jQuery); 
-
-});

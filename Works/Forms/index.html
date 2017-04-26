@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+				<meta charset="utf-8">
+				<title>Weekly WebDev Challenge - 1</title>
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<meta name="description" content="WeeklyWebDevChallenge - 1">
+				<meta name="keywords" content="">
+				<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<img src="img/logo.png" alt="masteralb.logo">
+		</header>
+		<section>
+			<div class="container">
+				<div class="col">
+					<h1>Register Form</h1>
+					<div class="form_border">
+						<form action="">
+							<div class="input_border">
+								<div class="left_input"><img src="img/username.png" alt="username"></div>
+								<div class="right_input">
+									<input type="text" id="r_username" name="r_username" required="required" placeholder="Username">
+								</div>
+							</div>
+							<div class="input_border">
+								<div class="left_input"><img src="img/password.png" alt="password"></div>
+								<div class="right_input">
+									<input type="password" id="r_password" name="r_password" required="required" placeholder="Password">
+								</div>
+							</div>
+							<div class="input_border">
+								<div class="left_input"><img src="img/password.png" alt="password"></div>
+								<div class="right_input">
+									<input tyle="r_password1" id="r_password1" name="r_password1" required="required" placeholder="Comfirm Password">
+								</div>
+							</div>
+							<div class="input_border">
+								<div class="left_input"><img src="img/email.png" alt="email"></div>
+								<div class="right_input">
+									<input type="email" id="r_email" name="r_mail" required="required" placeholder="Email">
+								</div>
+							</div>
+							<div class="input_border">
+								<div class="left_input"><img src="img/location.png" alt="location"></div>
+								<div class="right_select">
+									<select type="email" id="r_location" required="required" placeholder="Email">
+										<option value=" " disabled selected>Your location</option>
+										<option value="11">Lociation 1</option>
+										<option value="12">Location 2</option>
+										<option value="13">Location 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="checkbox">
+								<label class="checkbox_label">
+									<input type="checkbox"><span></span>I have read and accept the terms of use.
+								</label>
+								<input type="submit" value="Sign up" class="btn_from btn_green">
+							</div>
+						</form>
+					</div>
+					<h1>Send Email</h1>
+					<div class="form_border">
+						<form action="">
+							<div class="input_border">
+								<div class="left_input"><img src="img/username.png" alt="username"></div>
+								<div class="right_input">
+									<input type="text" id="e_username" name="e_username" required="required" placeholder="Username">
+								</div>
+							</div>
+							<div class="input_border">
+								<div class="left_input"><img src="img/email.png" alt="mail"></div>
+								<div class="right_input">
+									<input type="email" id="e_email" name="e_email" required="required" placeholder="Email">
+								</div>
+							</div>
+							<textarea name="message" id="message" required="required" row="9" placeholder="Type your message..."></textarea>
+							<div class="checkbox">
+								<label class="checkbox_label">
+									<input type="checkbox"><span></span>Send a copy to my Email
+								</label>
+							</div>
+							<input type="submit" value="Send Email" class="btn_from btn_green">
+						</form>
+					</div>
+				</div>
+				<div class="col col_margin">
+						<h1>Sing In Form</h1>
+						<div class="form_border">
+							<form action="">
+								<div class="input_border">
+									<div class="left_input"><img src="img/username.png" alt="username"></div>
+									<div class="right_input">
+										<input type="text" id="s_username" name="s_username" required="required" placeholder="Username">
+									</div>
+								</div>
+								<div class="input_border">
+									<div class="left_input"><img src="img/password.png" alt="password"></div>
+									<div class="right_input">
+										<input type="password" id="s_password" name="s_password" required="required" placeholder="Password">
+									</div>
+								</div>
+								<div class="checkbox checkbox_left float_left">
+									<label class="checkbox_label">
+										<input type="checkbox"><span></span>Remember me.
+									</label>
+								</div>
+								<input type="submit" value="Sign in" class="btn_from btn_green btn_small float_right">
+							</form>
+						</div>
+						<h1>Recover Form</h1>
+						<div class="form_border">
+							<form action="">
+								<div class="input_border">
+									<div class="left_input"><img src="img/email.png" alt="mail"></div>
+									<div class="right_input">
+										<input type="email" id="rf_email" name="rf_email" required="required" placeholder="Enter your Email">
+									</div>
+								</div>
+								<div class="input_border">
+									<div class="left_input"><img src="img/phone.png" alt="phone"></div>
+									<div class="right_input">
+										<input type="text" id="rf_phone" name="rf_phone" required="required" placeholder="Enter your Phone number">
+									</div>
+								</div>
+								<input type="submit" value="Send" class="btn_from btn_green btn_medium float_left">
+								<input type="submit" value="Done" disabled="disabled" class="btn_from btn_green btn_medium float_right btn_disabled">
+							</form>
+						</div>
+						<h1>Subscribe Form</h1>
+						<div class="form_border">
+							<form action="">
+								<div class="input_border">
+									<div class="left_input"><img src="img/email.png" alt="email"></div>
+									<div class="right_input">
+										<input type="email" id="sf_email" name="sf_name" required="required" placeholder="Enter your Email">
+									</div>
+								</div>
+								<input type="submit" value="Subscribe" class="btn_from btn_green btn_medium float_left">
+								<input type="submit" value="No, Thanks!" class="btn_from btn_red btn_medium float_right">
+							</form>
+						</div>
+						<div class="logo_1">
+							<img src="img/logo_1.png" alt="masterlb_logo_1" class="center-block img-responsive">
+						</div>
+					</div>
+			</div>
+		</section>	
+	</body>
+</html>

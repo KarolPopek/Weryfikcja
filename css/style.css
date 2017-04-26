@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Arvo:400,700|Pacifico|Raleway:200,400,700,900&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700|Pacifico|Raleway:400,700,900');
 @-ms-viewport{width:auto!important}
 
 body {
@@ -31,7 +31,7 @@ body {
 }
 
 nav .navbar-brand {
-	padding: 20px 0 45px 0;
+	padding: 22px 0 45px 0;
 	height: 100%;
 	transition: all 0.3s ease 0s; 
   	-webkit-transition: all 0.3s ease 0s;
@@ -41,7 +41,7 @@ nav .navbar-brand h1 {
 	font-family: 'Pacifico';
 	font-size: 44px;
 	color: #fff;
-	margin-right: 30px;
+	margin-left: 0;
 }
 
 #menu {
@@ -64,10 +64,10 @@ nav .navbar-brand h1 {
     content: '';
     display: block;
     position: absolute;
-    top: 0px;
-    left: -1%;
+    top: 0;
+    left: -3.5%;
     height: 3px;
-    width: 100%;
+    width: 108%;
     background-color: #FC5235;
 }
 
@@ -76,8 +76,8 @@ nav .navbar-brand h1 {
 }
 
 .navbar_top {
-	background: background-color: rgba(255, 255, 255, 0.1); 
-	height: 80px;
+	background-color: rgba(0, 0, 0, 0.6); 
+	height: 85px;
 	transition: all 0.3s ease 0s; 
   	-webkit-transition: all 0.3s ease 0s;
 }
@@ -99,7 +99,7 @@ nav .navbar-brand h1 {
 	z-index: 1000;
 	margin-top: 35px;
 	margin-right: 35px;
-	background-color: transparent;
+	background-color: inherit;
 	color: #fff;
 	border: none ;
 	font-size: 20px ;
@@ -111,6 +111,10 @@ nav .navbar-brand h1 {
 
 .button_nav:hover {
 	color: #ff6033;
+}	
+	
+ .button_nav:focus {
+	outline-color: transparent;
 }
 
 #home .container .col-sm-6 {
@@ -165,7 +169,8 @@ nav .navbar-brand h1 {
 	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
-	margin-top: 90px;
+	margin-top: 70px;
+	padding-top: 10px;
 	margin-bottom: 100px;
 }
 
@@ -190,7 +195,7 @@ nav .navbar-brand h1 {
 #aboutMe #hLine {
 	border-color: #FC5249;
     border-width: 12px;
-    margin: 45px 0 25px;
+    margin: 30px 0 25px;
     max-width: 110px;
 }
 
@@ -206,7 +211,7 @@ blockquote {
     font-size: 31px;
     font-style: italic;
     line-height: 1.5;
-    margin: 90px 0 90px 0;
+    margin: 100px 0 90px 0;
 }
 
 #aboutMe .details {
@@ -276,7 +281,8 @@ blockquote {
 	width: 90%;
 	bacground-color: #fff;
 	margin: 0 auto;
-	padding-top: 75px;
+	padding-top: 80px;
+	padding-bottom: 50px;
 }
 
 #works .row {
@@ -293,7 +299,7 @@ blockquote {
 
 #works .col {
     width: 28%;
-	margin: 20px 5% 20px 10px;
+	margin: 20px 5% 50px 10px;
 }
 
 #works .col:nth-child(3n){
@@ -342,8 +348,7 @@ blockquote {
 	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
-	margin-top: 70px;
-	padding-top: 20px;
+	padding-top: 110px;
 	padding-bottom: 80px;
 }
 
@@ -353,7 +358,6 @@ blockquote {
 	font-size: 90px;
 	line-height: 25px;
 	color: #fff;
-	margin-top: 90px;
 }
 
 #contact p{
@@ -408,6 +412,11 @@ blockquote {
 #contact form input::-moz-placeholder, #contact form textarea::-moz-placeholder{color: #fff;}
 
 #contact form input:-ms-input-placeholder, #contact form textarea:-ms-input-placeholder{color: #fff;}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #fff !important; 
+	-webkit-box-shadow: 0 0 0 1000px #FC5253 inset !important;
+}
 
 #contact button {
 	width: 500px;
@@ -573,6 +582,7 @@ footer > div > .row > div:last-child > p > span {
 	nav .navbar-brand h1 {
 		font-size: 33px !important;
 		margin-left: 30px;
+		margin-top: 22px;
 	}
 	
 	.navbar_top {
@@ -585,12 +595,19 @@ footer > div > .row > div:last-child > p > span {
 	
 	.button_nav {
 		margin-top: 40px;
-		margin-right: 5px;
+		margin-right: 25px;
 	}
 	
 	#menu {
 		font-weight: 600;
 		font-size: 15px;
+		text-align: center;
+		padding-top: 0;
+	}
+	
+	#menu > ul > .active > a::before, #menu > ul> li > a:hover::before {
+		width: 11%;
+		left: 44.5%;
 	}
 	
 	#home .container .col-sm-6 {

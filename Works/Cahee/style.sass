@@ -1,0 +1,1049 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700,900&subset=latin-ext')
+
+@-ms-viewport width:auto!important
+
+.no_padding 
+	padding: 0
+
+#home
+	background: #f9f8fb url('img/bg_header.jpg') no-repeat scroll center top
+	height: 100vh
+	min-height: 1000px
+	background-size: cover
+
+.navbar 
+	background: transparent
+	transition: all 2s ease 0s
+	-webkit-transition: all 2s ease 0s
+
+nav .navbar-brand 
+	padding: 50px 0 45px 0
+	height: 100%
+	transition: all 0.3s ease 0s
+	-webkit-transition: all 0.3s ease 0s
+
+#menu 
+	font-family: 'Raleway'
+	font-weight: 700
+	text-transform: uppercase
+	font-size: 16px
+	padding-top: 49px
+	transition: padding 0.3s ease 0s
+	-webkit-transition: padding 0.3s ease 0s
+
+	> ul > li > a 
+		color: #262626
+		padding: 9px 0 9px 0px
+		margin: 6px 15px 15px 23px
+
+#menu > ul > .active > a::before, #menu > ul> li > a:hover::before 
+	content: ''
+	display: block
+	position: absolute
+	top: 0px
+	left: -1%
+	height: 3px
+	width: 102%
+	background-color: #ff6033
+
+#menu > ul> li > a:hover,  #menu > ul> li > a:focus 
+	background-color: transparent
+
+.navbar_top 
+	background: #fff
+	height: 80px
+	transition: all 0.3s ease 0s
+	-webkit-transition: all 0.3s ease 0s
+
+	.navbar-brand 
+		padding-top: 13px
+		transition: all 0.3s ease 0s
+		-webkit-transition: all 0.3s ease 0s
+
+	#menu 
+		padding-top: 20px
+		transition: padding 0.3s ease 0s
+		-webkit-transition: padding 0.3s ease 0s
+
+
+.button_nav 
+	float: right
+	z-index: 1000
+	margin-top: 2px
+	margin-right: 15px
+	background-color: #fff
+	color: #262626 
+	border: none 
+	font-size: 20px 
+	padding-left: 14px 
+	padding-right: 14px 
+	padding-top: 12px 
+	border-radius: 0px
+
+#home 
+	h1
+		font-family: 'Raleway'
+		font-weight: 900
+		font-size: 60px
+		color: #262626
+		padding-top: 350px
+		margin: 0
+
+	p
+		font-family: 'Raleway'
+		font-size: 17px
+		line-height: 27px
+		padding-top: 17px
+
+.button
+	font-family: 'Raleway'
+	font-weight: 300
+	font-size: 20px
+	color: #fff
+	text-transform: uppercase
+	padding: 13px 0
+	border: none
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,.5)
+	-moz-box-shadow: 0 2px 5px rgba(0,0,0,.5)
+	box-shadow: 0 2px 5px rgba(0,0,0,.5)
+	text-align: center
+
+#home .button 
+	background: #ff6033
+	width: 200px
+	margin-top: 18px
+
+.scroll_img 
+	position: fixed
+	bottom: 60px
+	left: 0
+	right: 0
+	transition: opacity 2s ease 0s
+	-webkit-transition: opacity 2s ease 0s
+	animation: scroll_img 2s infinite
+	border: 2px solid transparent
+	border-radius: 40px
+
+
+@keyframes scroll_img 
+	50% 
+		border: 2px solid #ff6033
+		padding: 5px
+		border-radius: 40px
+		box-shadow: 0px 0px 10px #d0d0d0
+
+.hidden_scroll 
+	opacity: 0
+	transition: opacity .2s ease 0s
+	-webkit-transition: opacity .2s ease 0s
+
+#about 
+	height: 700px
+	background: #00b1b1
+
+	h1 
+		font-family: 'Raleway'
+		font-weight: 700
+		font-size: 90px
+		color: #fff
+		line-height: 27px
+		margin-top: 200px
+		margin-bottom: 45px
+
+	p 
+		font-family: 'Raleway'
+		font-weight: 300
+		font-size: 17px
+		color: #fff
+		line-height: 27px
+
+	img 
+		padding-top: 30px
+		margin-left: -40px
+
+
+	.img-responsive 
+		min-width: 111%
+
+#services 
+	.services_button 
+		width: 400px
+		height: 100px
+		background-color: #fff
+		-webkit-box-shadow: 0 4px 10px rgba(0,0,0,.5)
+		-moz-box-shadow: 0 4px 10px rgba(0,0,0,.5)
+		box-shadow: 0 4px 10px rgba(0,0,0,.5)
+		margin-bottom: 20px
+
+		> p 
+			font-family: 'Raleway'
+			font-weight: 700
+			font-size: 20px
+			line-height: 27px
+			color: #262626
+			padding-top: 38px
+			width: 300px
+			height: 100px
+			vertical-align: middle
+			text-align: center
+
+#services > div > div > a:nth-child(3) > div > p 
+	padding-top: 25px
+
+#services .services_button > img 
+	padding-right: 26px
+	padding-top: 25px
+
+#services .services_button::before 
+	content: " "
+	display: block
+	position: absolute
+	height: 100px
+	width: 1px
+	right: 90px
+	background: #9d9d9d
+
+#services 
+	height: 790px
+	background-color: #70bfff
+
+#services > div > div:nth-child(2) 
+	margin-top: 179px
+
+#services > div > div:last-child
+	margin-top: 100px
+
+#services > div > div:last-child > p 
+	font-family: 'Raleway'
+	font-weight: 700
+	font-size: 90px
+	color: #fff
+	position: absolute
+	width: 550px
+	right: 0
+	top: 200px
+
+#services > div > div:last-child > img 
+	margin-left: 25px
+
+#gallery 
+	background-color: #ffe92f
+	height: auto
+	padding-bottom: 100px
+
+	h1 
+		font-family: 'Raleway'
+		font-weight: 700
+		font-size: 90px
+		line-height: 27px
+		color: #262626
+		margin-top: 120px
+
+	p 
+		font-family: 'Raleway'
+		font-weight: 300
+		font-size: 17px
+		line-height: 27px
+		color: #262626
+		margin-top: 60px
+		margin-bottom: 50px
+
+	img  
+		-webkit-box-shadow: 0 4px 10px rgba(0,0,0,.5)
+		-moz-box-shadow: 0 4px 10px rgba(0,0,0,.5)
+		box-shadow: 0 4px 10px rgba(0,0,0,.5)
+
+#gallery > div > div:nth-child(2) > div:nth-child(2) > a:last-child > img 
+	margin-top: 30px
+
+#gallery > div > div:nth-child(3) 
+	margin-top: 30px
+
+#gallery .button
+	background-color: #5585a2
+	width: 200px
+	margin-top: 50px
+
+#gallery .more 
+	margin-top: 30px
+	display: none
+
+#subscribe
+	background: url('img/bg_subscribe_1.jpg') no-repeat scroll center right 18%
+	height: auto
+	padding-bottom: 120px
+
+	h1
+		font-family: 'Raleway'
+		font-weight: 700
+		font-size: 40px
+		line-height: 37px
+		color: #262626
+		margin-top: 150px
+
+	p
+		font-family: 'Raleway'
+		font-weight: 300
+		font-size: 17px
+		line-height: 27px
+		color: #262626
+		margin-top: 25px
+	
+	button 
+		background: #96b92c
+		width: 170px
+	
+	form 
+		margin-top: 20px
+
+		input
+			width: 100%
+			height: 55px
+			border: 1px solid #262626
+			padding: 15px 23px
+			font-family: 'Raleway'
+			font-weight: 400
+			font-size: 15px
+
+#blog 
+	background-color: #b07cf7
+	height: auto
+	padding-bottom: 100px
+
+	h1	
+		font-family: 'Raleway'
+		font-weight: 700
+		font-size: 90px
+		line-height: 25px
+		color: #fff
+		margin-top: 120px
+
+	> div > div > p 	
+		font-family: 'Raleway'
+		font-weight: 300
+		font-size: 17px
+		line-height: 25px
+		color: #fff
+		margin-top: 60px
+
+	div > .row > a > div
+		height: 310px
+		width: 370px
+		padding: 15px
+		margin: 40px 15px 0px 15px
+		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,.5)
+		-moz-box-shadow: 0 2px 5px rgba(0,0,0,.5)
+		box-shadow: 0 2px 5px rgba(0,0,0,.5)
+		background-position: center
+		background-size: 100%
+		transition: all 0.5s ease 0s
+		-webkit-transition: all 0.5s ease 0s	
+	&:hover 
+		background-size: 110%
+		background-position: center
+	&:hover::after 
+		content: ''
+		position: absolute
+		right: 0
+		bottom: 0
+		left: 0
+		background-color: #000
+		opacity: .4
+		height: 100%
+		transition: all 0.5s ease 0s
+		-webkit-transition: all 0.5s ease 0s
+
+.date 
+	width: 60px
+	height: 60px
+	background-color: rgba(0,0,0,0.4)
+	font-family: 'Raleway'
+	font-weight: 700
+	border-radius: 5px
+	margin: 15px
+	color: #fff
+	text-transform: uppercase
+	position: relative
+	z-index: 100
+
+	> p:first-child
+		font-size: 32px
+		padding-top: 3px
+		padding-left: 12px
+		line-height: 25px
+
+	> p:last-child 
+		font-size: 21px
+		padding-left: 7px
+		line-height: 10px
+
+
+#blog div > .row 
+	> a:first-child > div
+		background-image: url('img/blog_1.jpg')
+
+	> a:nth-child(2) > div
+		background-image: url('img/blog_2.jpg')
+
+	> a:nth-child(3) > div
+		background-image: url('img/blog_3.jpg')
+	&::before 
+		content: ''
+		position: absolute
+		right: 0
+		bottom: 0
+		left: 0
+		background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.9), rgba(255,255,255,.0))
+		background-image: -moz-linear-gradient(bottom, rgba(0,0,0,.9), rgba(255,255,255,.0))
+		background-image: -o-linear-gradient(bottom, rgba(0,0,0,.9), rgba(255,255,255,.0))
+		background-image: -ms-linear-gradient(bottom, rgba(0,0,0,.9), rgba(255,255,255,.0))
+		background-image: linear-gradient(to top, rgba(0,0,0,.9), rgba(255,255,255,.0))
+		height: 151px
+
+.blog_footer 
+	> p:first-child 
+		font-family: 'Raleway'
+		font-weight: 700
+		font-size: 20px
+		color: #fff
+		margin-top: 110px
+		position: relative
+		z-index: 100
+
+	> p:last-child 
+		font-family: 'Raleway'
+		font-weight: 400
+		font-size: 13px
+		color: #fff
+		margin-top: 15px
+		position: relative
+		z-index: 100
+
+#blog 
+	button 
+		width: 200px
+		background-color: #f72b3b
+		margin-top: 50px
+
+	.more_blog 
+		display: none
+
+#contact
+	background: url('img/bg_footer.jpg') no-repeat scroll center top
+	background-size: cover
+	height: auto
+	padding-bottom: 80px
+
+	h1
+		font-family: 'Raleway'
+		font-weight: 700
+		font-size: 90px
+		line-height: 25px
+		color: #262626
+		margin-top: 120px
+
+	p
+		font-family: 'Raleway'
+		font-weight: 400
+		font-size: 17px
+		line-height: 25px
+		color: #262626
+		margin-top: 70px
+		margin-bottom: 45px
+		
+	form textarea 
+		height: 250px
+		padding-top: 20px
+		font-size: 15px
+		resize: none
+		
+	button 
+		width: 500px
+		background-color: #00c4c4
+		
+	h2 
+		font-family: 'Raleway'
+		font-weight: 700
+		font-size: 17px
+		line-height: 55px
+		color: #262626
+		text-transform: uppercase
+
+	h3
+		font-family: 'Raleway'
+		font-size: 20px
+		line-height: 25px
+		color: #262626
+		margin-top: -27px
+		margin-bottom: -23px
+		
+	> div > .row > div 
+		margin-top: -37px
+		width: 330px
+
+	form input, form textarea 
+		width: 500px
+		height: 50px
+		margin-bottom: 15px
+		background-color: #00c4c4
+		opacity: .6
+		border: none
+		padding-left: 20px
+		font-family: 'Raleway'
+		font-weight: 400
+		font-size: 15px
+		color: #fff
+	&:focus, &:focus 
+		background-color: #00c4c4
+		opacity: 1
+		font-family: 'Raleway'
+		font-weight: 700
+		color: #fff
+		border-left: 5px solid #355b82
+		outline: 0
+		padding-left: 14px
+
+#contact form input::-webkit-input-placeholder 
+	color: #fff
+#contact form textarea::-webkit-input-placeholder 
+	color: #fff
+#contact form input::-moz-placeholder 
+	color: #fff 
+#contact form textarea::-moz-placeholder 
+	color: #fff
+#contact form input::-moz-placeholder 
+	color: #fff
+#contact form textarea::-moz-placeholder 
+	color: #fff
+#contact form input::-ms-input-placeholder 
+	color: #fff 
+#contact form textarea::-ms-input-placeholder 
+	color: #fff
+
+footer 
+	background-color: #262626
+	height: 90px
+
+	> div > .row > div:first-child > p 
+		font-family: 'Raleway'
+		font-weight: 400
+		font-size: 16px
+		color: #b9b9b9
+		padding-top: 38px
+
+		> div:nth-child(2) > img 
+			padding-top: 30px
+
+		> div:last-child > p 
+			font-family: 'Raleway'
+			font-weight: 700
+			font-size: 15px
+			color: #b9b9b9
+			padding-top: 38px
+			float: right
+
+			> span
+				color: #ff2b58
+
+@media (max-width: 316px) 
+	
+	#services .services_button 
+		> p 
+			min-width: 220px !important
+			width: auto !important
+	
+		> img 
+			display: none
+
+@media (max-width: 767px)  
+	
+	#home
+		background: #f9f8fb url('img/bg_header.jpg') no-repeat  scroll center top 10%
+		height: auto
+		min-height: 100vh
+		padding-bottom: 100px
+	
+	.navbar 
+		background: #fff
+		height: 50px
+		box-shadow: 1px 1px 5px #e6e5e5
+	
+		.navbar-brand 
+			padding-top: 8px
+
+	nav .navbar-brand img 
+		width: 90px
+	
+	#menu
+		-webkit-transition: width 1s ease
+		-moz-transition: width 1s ease
+		-o-transition: width 1s ease
+		transition: width 1s ease !important
+		display: inline-block
+		overflow: hidden
+		white-space: nowrap
+		background: #fff
+		vertical-align: middle
+		line-height: 30px
+		min-height: 100%
+		width: 0
+		margin-right: -55px
+		padding-top: 10%
+		padding-bottom: 100px
+		list-style: none
+		padding-left: 40px
+		margin-top: 42px
+		position: fixed
+		top: 8px
+		right: 0
+
+		ul li a 
+			font-size: 13px
+			margin-bottom: 18px
+
+		.in 
+			width: 250px
+	
+		> ul > .active > a::before, #menu > ul> li > a:hover::before
+			left: -20px
+			height: 100%
+			width: 3px
+	
+		h1 
+			font-size: 50px
+			padding-top: 150px
+			text-align: center
+
+		p 
+			text-align: center
+	
+		.button 
+			margin-top: 28px
+			margin-left: auto
+			margin-right: auto
+			display: block
+	
+	#about
+		height: auto
+		padding-bottom: 50px
+
+		h1 
+			font-size: 50px
+			margin-top: 30px
+			text-align: center
+
+		p 
+			font-size: 15px
+			text-align: center
+	
+		img 
+			padding-top: 30px
+			margin-left: -40px
+			max-width: 60%
+
+		.img-responsive 
+			min-width: 70%
+			margin-right: auto
+			margin-left: auto
+	
+		.services_button 
+			max-width: 400px
+			width: auto
+			height: 80px
+			display: block
+			margin-left: auto
+			margin-right: auto
+			
+			> p 
+				font-size: 16px
+				padding-top: 30px
+				padding-left: 15px
+				max-width: 190px
+				height: 80px
+	
+	#services
+		height: auto
+		padding-bottom: 60px
+
+		h2 
+			font-family: 'Raleway'
+			font-weight: 700
+			font-size: 40px
+			color: #fff
+			text-shadow: 1px 1px 5px #6a6a6a
+			position: absolute
+			top: 50%
+			left: 0
+			right: 0
+	
+		> div > div > img 
+			margin-top: 10%
+			width: 50%
+			min-width: 60%
+			
+		> div > div:nth-child(2) 
+			margin-top: 30px
+			
+		> div > div > a:nth-child(3) > div > p
+			padding-top: 15px
+		
+		.services_button > img 
+			padding: 20px
+			width: 80px
+		
+		.services_button::before 
+			background: transparent
+		
+		
+
+	#gallery 
+		height: auto
+		padding-bottom: 50px
+
+		h1 
+			font-size: 50px
+			margin-top: 70px
+
+		p 
+			text-align: center
+			font-size: 15px
+			margin-top: 50px
+
+		img  
+			width: 100%
+			margin-bottom: 30px
+	
+		> div > div:nth-child(3)  
+			margin-top: 0px
+			
+		.button 
+			margin-top: 20px
+	
+		.more 
+			margin-top: 0px
+	
+	#subscribe 
+		height: auto
+		padding-bottom: 210px
+		background-size: contain
+		background-position: center bottom
+
+	h1 
+		font-size: 40px
+		line-height: 37px
+		margin-top: 80px
+		text-align: center
+
+	p 
+		text-align: center
+		background: #fff
+		padding: 5px
+		font-size: 15px
+
+	form 
+		margin-top: 20px
+
+	button 
+		margin-top: 20px
+		display: block
+		margin-left: auto
+		margin-right: auto
+	
+	#blog 
+		height: auto
+		padding-bottom: 50px
+	
+		h1 
+			font-size: 50px
+			margin-top: 50px
+		
+		p 
+			text-decoration: none
+			text-align: center
+	
+		.row 
+			padding: 15px
+		
+		.button 
+			margin-top: 20px
+	
+		.more_blog 
+			margin-top: -30px
+	
+		> div > div > p
+			font-size: 15px
+			margin-top: 50px
+			
+		> div > div:nth-child(2)
+			padding-bottom: 0
+
+		div > .row > a  
+			text-decoration: none
+		
+			.row > a > div 
+				width: 100%
+				background-size: cover
+				margin: 20px auto 
+				float: none
+				text-decoration: none	
+	
+				> a > div:hover 
+					background-size: cover	
+	
+	.blog_footer > p:first-child 
+		font-size: 18px
+	
+	#contact
+		background: url('img/bg_footer.jpg') no-repeat scroll center top
+		background-size: cover
+		height: auto
+		padding-bottom: 50px
+
+		h1
+			font-size: 50px
+			margin-top: 50px
+
+		p
+			margin-top: 40px
+			font-size: 15px
+			
+		h2 
+			color: #fff
+
+		h3 
+			font-size: 15px
+			color: #fff
+
+		form input, form textarea
+			width: 100%	
+			height: 40px
+
+		form textarea 
+			height: 150px
+			padding-top: 20px
+			font-size: 15px
+			resize: none
+
+		button 
+			width: 100%
+
+		> div > .row > div 
+			margin-top: 10px
+			width: 100%
+			text-align: center
+
+	footer 
+		height: auto
+		padding-bottom: 20px
+
+		> div > .row > div:first-child > p 
+			font-size: 14px
+			padding-top: 28px
+			float: none
+			text-align: center
+
+			> .row > div:nth-child(2) > img 
+				padding-top: 8px
+	
+				> div:last-child > p
+					font-size: 13px
+					padding-top: 18px
+					float: none
+					text-align: center
+
+@media (min-width: 768px) and (max-width: 991px)
+	
+	#menu > ul > li > a 
+		margin: 6px 15px 15px 20px
+		font-size: 14px
+	
+	#about 
+		height: 650px
+
+		h1
+			font-size: 60px
+			margin-top: 150px
+
+		img 
+			padding-top: 130px
+			margin-left: -40px
+	
+	#services 
+		height: 580px
+		background-color: #70bfff
+	
+		.services_button 
+			width: 350px
+			height: 80px
+			&::before 	
+				height: 80px	
+				right: -25px
+
+			> img 
+				padding: 15px 16px 0 0
+			
+			> p 
+				font-size: 18px
+				line-height: 27px
+				padding-top: 28px
+				width: 250px
+				height: 80px
+				vertical-align: middle
+				text-align: center
+
+		> div > div > div:nth-child(3) > p 
+			padding-top: 15px
+
+		> div > div:nth-child(2) 
+			margin-top: 100px
+
+			> div:last-child 
+				margin-top: 115px
+
+			> div:last-child > p 
+				font-size: 55px
+				width: 340px
+				top: 180px
+
+			> div:last-child > img
+				margin-left: 0
+	
+	#gallery 
+		height: auto
+		padding-bottom: 80px
+
+		> div > div:nth-child(2) > div:nth-child(2) > img:last-child
+			margin-top: 26px
+	
+	#subscribe 
+		height: auto
+		padding-bottom: 180px
+		background-position: center bottom
+
+		h1 
+			font-size: 40px
+			line-height: 37px
+			margin-top: 100px
+			text-align: center
+
+		p 
+			text-align: justify
+			background: #fff
+			padding: 5px
+
+		form 
+			margin-top: 20px
+
+		button 
+			margin-top: 20px
+			display: block
+			margin-left: auto
+			margin-right: auto
+	
+	#blog 
+		height: auto
+		padding-bottom: 100px
+	
+		h1 
+			font-size: 80px
+
+		div > .row > a > div 
+			width: 350px
+			margin: 40px 10px 0px 10px
+			background-size: 110%
+	
+			> .row > a > div:hover 
+				background-size: 120%
+	
+	#contact 
+		h1 
+			font-size: 80px
+
+		form input, form textarea 
+			min-width: 400px
+			width: auto
+
+		button
+			min-width: 400px
+			width: auto
+	
+		> div > .row > div
+			width: auto
+			float: right
+
+		h3
+			font-size: 17px
+
+	footer > div > .row > div:first-child > p 
+		font-size: 14px
+
+		> div > .row > div:last-child > p 
+			font-size: 13px
+
+@media (min-width: 992px) and (max-width: 1199px) 
+
+	#about 
+		img 
+			padding-top: 90px
+	
+		h1 
+			font-size: 80px
+	
+	#services 
+		height: 700px
+		background-color: #70bfff
+
+		.services_button::before
+			right: 15px
+
+		> div > div:nth-child(2) 
+			margin-top: 120px
+
+			> div:last-child 
+				margin-top: 120px
+
+			> div:last-child > p 	
+				font-size: 80px
+				width: 490px
+
+			> div:last-child > img 
+				margin-left: 15px
+	
+	#gallery 
+		height: auto
+		padding-bottom: 80px
+
+		> div > div:nth-child(2) > div:nth-child(2) > img:last-child
+			margin-top: 28px
+
+	#subscribe 
+		background-position: center right
+	
+	#blog div > .row > a > div
+		height: 293px
+		width: 293px
+		padding: 15px
+		margin: 40px 15px 0px 15px
+		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,.5)
+		-moz-box-shadow: 0 2px 5px rgba(0,0,0,.5)
+		box-shadow: 0 2px 5px rgba(0,0,0,.5)
+		background-size: 120%
+		&:hover
+			background-size: 130%
+	
+	.date 
+		margin: 5px
+
+	#contact h1 
+		font-size: 80px
+	
+	footer > div > .row > div:first-child > p 
+		font-size: 14px
+
+	> div > .row > div:last-child > p
+		font-size: 13px
+
+@media (min-width: 1200px)
+	.container 
+		padding-right: 0
+		padding-left: 0
